@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+  <!-- stayle -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common_word.css">
+  <link rel="stylesheet" href="../css/animals.css">
+  <title>Animals</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="main-title">     
+        <h4>~ Word ~</h4>
+        <h1>Animals</h1>
+      </div>
+      <nav>
+        <div class="pdf">
+          <a href="./pdf/animals.pdf" target=”_blank”>
+            <img src="../img/pdf1.png" height="40" alt="PDF">
+            <p>Download</p>
+          </a>
+        </div>
+        <div class="return">
+          <a href="../contents.html">
+            <img src="../img/return.png" height="30" alt="Return">
+            <P>To Contents</P>
+          </a>
+        </div>
+      </nav>
+    </header>
+  
+    <hr>
+
+    <!-- reading -->
+    <div class="reading">
+      <audio id="audio" controls></audio>
+      <div class="btn-container">
+        <button class="btn" id="btn01">Word On</button>
+        <button class="btn light" id="btn02">Word Off</button>
+      </div>
+    </div>
+  
+    <!-- main -->
+    <main>
+      <div class="main-wrapper">
+        <!-- 公園 -->
+        <div class="item"><img class="animal-image" src="./img/animal_park.png" width="550" alt="Park">
+          <div class="dummy bird"  onclick="playAudio('./audio/animal/bird.mp3')">      <p>Bird</p></div>
+          <div class="dummy btfly" onclick="playAudio('./audio/animal/butterfly.mp3')"> <p>Butterfly</p></div>
+          <div class="dummy cat"   onclick="playAudio('./audio/animal/cat.mp3')">       <p>Cat</p></div>
+          <div class="dummy dog"   onclick="playAudio('./audio/animal/dog.mp3')">       <p>Dog</p></div>
+          <div class="dummy mouse" onclick="playAudio('./audio/animal/mouse.mp3')">     <p>Mouse</p></div>
+          <div class="dummy snake" onclick="playAudio('./audio/animal/snake.mp3')">     <p>Snake</p></div>
+          <div class="dummy frog " onclick="playAudio('./audio/animal/frog.mp3')">      <p>Frog</p></div>
+        </div>
+        <!-- 牧場 -->
+        <div class="item"><img class="animal-image" src="./img/animal_glassland.png" width="550" alt="Glassland">
+          <div class="dummy sheep" onclick="playAudio('./audio/animal/sheep.mp3')"> <p>Sheep</p></div>
+          <div class="dummy cow  " onclick="playAudio('./audio/animal/cow.mp3')">   <p>Cow</p></div>
+          <div class="dummy goat " onclick="playAudio('./audio/animal/goat.mp3')">  <p>Goat</p></div>
+          <div class="dummy pig  " onclick="playAudio('./audio/animal/pig.mp3')">   <p>Pig</p></div>
+          <div class="dummy horse" onclick="playAudio('./audio/animal/horse.mp3')"> <p>Horse</p></div>
+        </div>
+        <!-- 森 -->
+        <div class="item"><img class="animal-image" src="./img/animal_forest.png" width="550" alt="Forest">
+          <div class="dummy rbbit" onclick="playAudio('./audio/animal/rabbit.mp3')">    <p>Rabbit</p></div>
+          <div class="dummy fox  " onclick="playAudio('./audio/animal/fox.mp3')">       <p>Fox</p></div>
+          <div class="dummy sqrel" onclick="playAudio('./audio/animal/squirrel.mp3')">  <p>Squirrel</p></div>
+          <div class="dummy deer " onclick="playAudio('./audio/animal/deer.mp3')">      <p>Deer</p></div>
+          <div class="dummy bear " onclick="playAudio('./audio/animal/bear.mp3')">      <p>Bear</p></div>
+          <div class="dummy monky" onclick="playAudio('./audio/animal/monkey.mp3')">    <p>Monkey</p></div>
+          <div class="dummy duck " onclick="playAudio('./audio/animal/duck.mp3')">      <p>Duck</p></div>
+          <div class="dummy w-boa" onclick="playAudio('./audio/animal/wild-boar.mp3')"> <p>Wild Boar</p></div>
+          <div class="dummy owl  " onclick="playAudio('./audio/animal/owl.mp3')">       <p>Owl</p></div>
+        </div>
+        <!-- 海 -->
+        <div class="item"><img class="animal-image" src="./img/animal_sea.png" width="550" alt="Sea">
+          <div class="dummy whale" onclick="playAudio('./audio/animal/whale.mp3')">   <p>Whale</p></div>
+          <div class="dummy dolpn" onclick="playAudio('./audio/animal/dolphin.mp3')"> <p>Dolphin</p></div>
+          <div class="dummy fish " onclick="playAudio('./audio/animal/fish.mp3')">    <p>Fish</p></div>
+          <div class="dummy turtl" onclick="playAudio('./audio/animal/turtle.mp3')">  <p>Turtle</p></div>
+          <div class="dummy shrmp" onclick="playAudio('./audio/animal/shrimp.mp3')">  <p>Shrimp</p></div>
+          <div class="dummy squid" onclick="playAudio('./audio/animal/squid.mp3')">   <p>Squid</p></div>
+          <div class="dummy crab " onclick="playAudio('./audio/animal/crab.mp3')">    <p>Crab</p></div>
+          <div class="dummy shark" onclick="playAudio('./audio/animal/shark.mp3')">   <p>Shark</p></div>
+          <div class="dummy octps" onclick="playAudio('./audio/animal/octopus.mp3')"> <p>Octopus</p></div>
+        </div>
+        <!-- サバンナ -->
+        <div class="item"><img class="animal-image" src="./img/animal_savanna.png" width="550" alt="Savanna">
+          <div class="dummy grafe" onclick="playAudio('./audio/animal/giraffe.mp3')">   <p>Giraffe</p></div>
+          <div class="dummy tiger" onclick="playAudio('./audio/animal/tiger.mp3')">     <p>Tiger</p></div>
+          <div class="dummy elpht" onclick="playAudio('./audio/animal/elephant.mp3')">  <p>Elephant</p></div>
+          <div class="dummy crcdl" onclick="playAudio('./audio/animal/crocodile.mp3')"> <p>Crocodile</p></div>
+          <div class="dummy lion " onclick="playAudio('./audio/animal/lion.mp3')">      <p>Lion</p></div>
+          <div class="dummy grill" onclick="playAudio('./audio/animal/gorilla.mp3')">   <p>Gorilla</p></div>
+          <div class="dummy hippo" onclick="playAudio('./audio/animal/hippo.mp3')">     <p>Hippo</p></div>
+        </div>
+        <!-- 原っぱ -->
+        <div class="item"><img class="animal-image" src="./img/animal_glassshade.png" width="550" alt="GlassShade">
+          <div class="dummy drgfl" onclick="playAudio('./audio/animal/dragonfly.mp3')">   <p>Dragonfly</p></div>
+          <div class="dummy ant  " onclick="playAudio('./audio/animal/ant.mp3')">         <p>Ant</p></div>
+          <div class="dummy spidr" onclick="playAudio('./audio/animal/spider.mp3')">      <p>Spider</p></div>
+          <div class="dummy snail" onclick="playAudio('./audio/animal/snail.mp3')">       <p>Snail</p></div>
+          <div class="dummy grshp" onclick="playAudio('./audio/animal/grasshopper.mp3')"> <p>Grasshopper</p></div>
+          <div class="dummy msqit" onclick="playAudio('./audio/animal/mosquito.mp3')">    <p>Mosquito</p></div>
+          <div class="dummy bee  " onclick="playAudio('./audio/animal/bee.mp3')">         <p>Bee</p></div>
+          <div class="dummy ldybg" onclick="playAudio('./audio/animal/ladybug.mp3')">     <p>Ladybug</p></div>
+          <div class="dummy lizrd" onclick="playAudio('./audio/animal/lizard.mp3')">      <p>Lizard</p></div>
+        </div>
+      </div>
+
+
+      
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; AIREI Project</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+      'use strict';
+
+      const btn01 = document.getElementById('btn01');
+      const btn02 = document.getElementById('btn02');
+      const dummys = document.getElementsByClassName('dummy');
+      const appear = document.getElementsByClassName('appear');
+
+      // word on/off 切替
+      btn01.addEventListener('click', function() {
+        this.classList.add('light');
+        btn02.classList.remove('light');
+        for (let i = 0; i < dummys.length; i++) {
+          dummys[i].classList.add('appear');
+        }
+      });
+      btn02.addEventListener('click', function() {
+        this.classList.add('light');
+        btn01.classList.remove('light');
+        for (let i = 0; i < dummys.length; i++) {
+          dummys[i].classList.remove('appear');
+        }
+      });
+
+      // word出現
+      for (let i = 0; i < dummys.length; i++) {
+        dummys[i].addEventListener('click', function() {
+          this.classList.toggle('appear');
+        });
+      };
+
+      // word音声
+      function playAudio(audioFile) {
+        const audio = document.getElementById("audio");
+        audio.src = audioFile;
+        audio.play();
+      }
+
+
+
+    </script>
+    
+</body>
+</html>
