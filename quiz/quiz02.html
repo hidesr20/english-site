@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common_quiz.css">
+  <title>02.Who are you?</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="main-title">     
+      <h4>~ Quiz 02 ~</h4>
+      <h1>Who are you?</h1>
+    </div>
+    <nav>
+      <!-- <div class="pdf">
+        <a href="./pdf/quiz02.pdf" target=”_blank”>
+          <img src="../img/pdf1.png" height="40" alt="PDF">
+          <p>Download</p>
+        </a>
+      </div> -->
+      <div class="return">
+        <a href="../index.html">
+          <img src="../img/return.png" height="30" alt="Return">
+          <P>To Contents</P>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- reading -->
+  <div class="reading">
+    <audio id="audio" controls></audio>
+    <div class="btn-container">
+      <button class="btn" id="btn01">読</button>
+      <button class="btn" id="btn02">英</button>
+      <button class="btn" id="btn03">日</button>
+    </div>
+    <button id="btn04">All Box Close</button>
+  </div>
+
+  <!-- main -->
+  <main>
+    <!-- 01 -->
+    <section class="quiz-item">
+      <h3>Q01</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q01_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム アン アニマル</p>  <!-- 入力 -->
+              <p class="write">I am an animal.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、どうぶつです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q01_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム ベーリー ラージ</p>  <!-- 入力 -->
+              <p class="write">I am very large.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、とても大きいです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q01_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ ハブ ア ロング ノゥズ</p>  <!-- 入力 -->
+              <p class="write">I have a long nose.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、ながいはながあります。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question1.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q01_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>       
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_elephant.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム エレファント</p>  <!-- 入力 -->
+                <p class="write">I am Elephant.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、ぞうです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 02 -->
+    <section class="quiz-item">
+      <h3>Q02</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q02_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム アン アニマル</p>  <!-- 入力 -->
+              <p class="write">I am an animal.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、どうぶつです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q02_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ ハブ ブロウン スポッツ</p>  <!-- 入力 -->
+              <p class="write">I have brown spots.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、茶色いはんてんがあります。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q02_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ ハブ ア ベーリー ロング ネック</p>  <!-- 入力 -->
+              <p class="write">I have a very long neck.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、とても長いくびです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question2.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q02_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>      
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_giraffe.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム ジェラフ</p>  <!-- 入力 -->
+                <p class="write">I am Giraffe.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、キリンです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 03 -->
+    <section class="quiz-item">
+      <h3>Q03</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q03_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム アン アニマル</p>  <!-- 入力 -->
+              <p class="write">I am an animal.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、どうぶつです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q03_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ  アム グッダット ジャンピング</p>  <!-- 入力 -->
+              <p class="write">I am good at jumping.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、ジャンプが とくいです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q03_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ ハブ ロング イヤーズ</p>  <!-- 入力 -->
+              <p class="write">I have long ears.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、長い耳があります。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question2.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q03_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>      
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_rabbit.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム ラビット</p>  <!-- 入力 -->
+                <p class="write">I am Rabbit.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、うさぎです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 04 -->
+    <section class="quiz-item">
+      <h3>Q04</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q04_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム アン アニマル</p>  <!-- 入力 -->
+              <p class="write">I am an animal.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、どうぶつです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q04_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ  アム ブラック アンド オーレンジ</p>  <!-- 入力 -->
+              <p class="write">I am black and orange.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、黒とオレンジです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q04_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ ハブ シャープ ティース</p>  <!-- 入力 -->
+              <p class="write">I have sharp teeth.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、するどい はがあります。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question1.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q04_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>       
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_tiger.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム タイガー</p>  <!-- 入力 -->
+                <p class="write">I am Tiger.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、とらです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 05 -->
+    <section class="quiz-item">
+      <h3>Q05</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q05_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム ロング</p>  <!-- 入力 -->
+              <p class="write">I am long.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、長いです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q05_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ キャン バイト</p>  <!-- 入力 -->
+              <p class="write">I can bite.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、かみます。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q05_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム スケァリー</p>  <!-- 入力 -->
+              <p class="write">I am scary.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、こわいです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question1.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q05_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>       
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_snake.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム スネェク</p>  <!-- 入力 -->
+                <p class="write">I am Snake.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、へびです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 06 -->
+    <section class="quiz-item">
+      <h3>Q06</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q06_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム ア バード</p>  <!-- 入力 -->
+              <p class="write">I am a bird.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、とりです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q06_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム ブラック アンド ホワイト</p>  <!-- 入力 -->
+              <p class="write">I am black and white.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、黒と白です。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q06_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ キャンノット フライ</p>  <!-- 入力 -->
+              <p class="write">I cannnot fly.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、とべません。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question2.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q06_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>      
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_penguin.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム ペングィン</p>  <!-- 入力 -->
+                <p class="write">I am Penguin.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、ペンギンです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 07 -->
+    <section class="quiz-item">
+      <h3>Q07</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q07_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ キャン スウィム ベーリー ファースト</p>  <!-- 入力 -->
+              <p class="write">I can swim very fast.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、とてもはやくおよげます。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q07_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム グッダット ジャンピング</p>  <!-- 入力 -->
+              <p class="write">I am good at jumping.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、ジャンプが とくいです</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q07_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ リヴィン ザ シー</p>  <!-- 入力 -->
+              <p class="write">I live in the sea.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、うみにすんでします。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question2.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q07_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>      
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_dolphin.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム ドルフィン</p>  <!-- 入力 -->
+                <p class="write">I am Dolphin.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、イルカです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 08 -->
+    <section class="quiz-item">
+      <h3>Q08</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q08_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ キャン フライ</p>  <!-- 入力 -->
+              <p class="write">I can fly.</p>  <!-- 入力 -->
+              <p class="mean">わたしはとべます。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q08_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム グッダット パンチング</p>  <!-- 入力 -->
+              <p class="write">I am good at punching.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、パンチが とくいです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q08_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">マイ ヘッド イズ フル オブ アンコ</p>  <!-- 入力 -->
+              <p class="write">My head is full of anko.</p>  <!-- 入力 -->
+              <p class="mean">わたしのあたまは、あんこでいっぱいです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question1.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q08_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>       
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_anpanman.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム アンパンマン</p>  <!-- 入力 -->
+                <p class="write">I am Anpanman.</p>  <!-- 入力 -->
+                <p class="mean">わたしは、アンパンマンです。</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+    <!-- 09 -->
+    <section class="quiz-item">
+      <h3>Q09</h3>
+      <div class="quiz">
+        <!-- hint -->
+        <div class="quiz-hint">
+          <div class="hint" onclick="playAudio('./audio/quiz02/q09_hint1.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">マイ ボディ イズ ブルー</p>  <!-- 入力 -->
+              <p class="write">My body is blue.</p>  <!-- 入力 -->
+              <p class="mean">わたしの体は青色です。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q09_hint2.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ ハブ メニー トゥールス</p>  <!-- 入力 -->
+              <p class="write">I have many tools.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、どうぐをいっぱいもっています。</p>  <!-- 入力 -->
+            </div>
+          </div>
+          <div class="hint" onclick="playAudio('./audio/quiz02/q09_hint3.mp3')">  <!-- 音声入力 -->
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">アイ アム ロボット</p>  <!-- 入力 -->
+              <p class="write">I am robot.</p>  <!-- 入力 -->
+              <p class="mean">わたしは、ロボットです。</p>  <!-- 入力 -->
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>      
+        <!-- question -->
+        <div class="quiz-question">
+          <div class="question" onclick="playAudio('./audio/quiz02/question1.mp3')">
+            <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+            <div class="item">
+              <p class="read">フー アー ユー？</p>
+              <p class="write">Who are you？</p>
+              <p class="mean">あなたはだれですか？</p>
+            </div>
+          </div>
+        </div>      
+        <div class="arrow"><img src="./img/arrow.png" alt=""></div>
+        <!-- answer -->
+        <div class="quiz-answer" class="quiz-answer">
+          <!-- Box閉 -->
+          <div class="box-close" onclick="playAudio('./audio/quiz02/q09_answer.mp3')">  <!-- 音声入力 -->
+            <div class="answer-img"><img src="./img/who.png" alt="who" width="300"></div>
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム</p>
+                <p class="write">I am __________.</p>
+                <p class="mean">わたしは、</p>       
+              </div>
+            </div>
+          </div>
+          <!-- Box開 -->
+          <div class="box-open hidden">
+            <div class="answer-img"><img src="./img/who_doraemon.png" alt="who" width="300"></div>  <!-- 画像入力 -->
+            <div class="answer">
+              <div class="speaker"><img src="./img/speaker.png" alt="Speaker"></div>
+              <div class="item">
+                <p class="read">アイ アム ドラエモン</p>  <!-- 入力 -->
+                <p class="write">I am Doraemon.</p>  <!-- 入力 -->
+                <p class="mean">ぼく、ドラえもん！</p>  <!-- 入力 -->       
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>      
+    </section>
+
+
+  </main>
+
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; AIREI Project</p>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script>
+    'use strict';
+
+    // 音声再生
+    function playAudio(audioFile) {
+      const audio = document.getElementById("audio");
+      audio.src = audioFile;
+      audio.play();
+    }
+
+    // 読み/日本語 表示/非表示
+    const btn01 = document.getElementById('btn01');
+    const btn02 = document.getElementById('btn02');
+    const btn03 = document.getElementById('btn03');
+    
+    const read = document.getElementsByClassName('read');
+    const write = document.getElementsByClassName('write');
+    const mean = document.getElementsByClassName('mean');
+    
+    btn01.addEventListener('click', function() {
+      this.classList.toggle('btn-change');
+      for (let i = 0; i < read.length; i++) {
+        read[i].classList.toggle('appear');
+      }
+    });
+    btn03.addEventListener('click', function() {
+      this.classList.toggle('btn-change');
+      for (let i = 0; i < mean.length; i++) {
+        mean[i].classList.toggle('appear');
+      }
+    });
+
+
+    // answer 出現
+    const boxClose = document.getElementsByClassName('box-close');
+    const boxOpen = document.getElementsByClassName('box-open');
+    const classHidden = document.getElementsByClassName('hidden');
+    const btn04 = document.getElementById('btn04');
+
+    for (let i =0; i < boxClose.length; i++) {
+      boxClose[i].addEventListener('click', function() {
+        boxClose[i].classList.add('hidden');
+        boxOpen[i].classList.remove('hidden');
+      });
+    };
+    for (let i =0; i < boxOpen.length; i++) {
+      boxOpen[i].addEventListener('click', function() {
+        boxOpen[i].classList.add('hidden');
+        boxClose[i].classList.remove('hidden');
+      });
+    };
+
+    btn04.addEventListener('click', function() {
+      for (let i = 0; i < boxClose.length; i++) {
+        boxClose[i].classList.remove('hidden');
+        boxOpen[i].classList.add('hidden');
+      }
+    });
+
+  </script>
+
+</body>
+</html>
