@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+  <!-- stayle -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common_word.css">
+  <link rel="stylesheet" href="../css/animals.css">
+  <title>Animals</title>
+
+  <style>
+    main {
+      margin: 60px auto;
+      text-align: center;
+    }
+    main img {
+      margin-bottom: 20px;
+    }
+    main h1 {
+      font-size: 50px;
+      color: blue;
+    }
+
+  </style>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="main-title">     
+        <h4>~ Word ~</h4>
+        <h1>Animals</h1>
+      </div>
+      <nav>
+        <div class="return">
+          <a href="../contents.html">
+            <img src="../img/return.png" height="30" alt="Return">
+            <P>To Contents</P>
+          </a>
+        </div>
+      </nav>
+    </header>
+  
+    <hr>
+
+    <!-- main -->
+    <main>
+      <img src="../scene/img/Sleep.png" width="250" alt="prepare">
+      <h1>じゅんび中</h1>
+      <h1>Under preparation</h1>
+    </main>
+
+  
+    <!-- footer -->
+    <footer>
+      <p>&copy; AIREI Project</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+      'use strict';
+
+      const btn01 = document.getElementById('btn01');
+      const btn02 = document.getElementById('btn02');
+      const dummys = document.getElementsByClassName('dummy');
+      const appear = document.getElementsByClassName('appear');
+
+      // word on/off 切替
+      btn01.addEventListener('click', function() {
+        this.classList.add('light');
+        btn02.classList.remove('light');
+        for (let i = 0; i < dummys.length; i++) {
+          dummys[i].classList.add('appear');
+        }
+      });
+      btn02.addEventListener('click', function() {
+        this.classList.add('light');
+        btn01.classList.remove('light');
+        for (let i = 0; i < dummys.length; i++) {
+          dummys[i].classList.remove('appear');
+        }
+      });
+
+      // word出現
+      for (let i = 0; i < dummys.length; i++) {
+        dummys[i].addEventListener('click', function() {
+          this.classList.toggle('appear');
+        });
+      };
+
+      // word音声
+      function playAudio(audioFile) {
+        const audio = document.getElementById("audio");
+        audio.src = audioFile;
+        audio.play();
+      }
+
+
+
+    </script>
+    
+</body>
+</html>

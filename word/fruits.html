@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+  <!-- stayle -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common_word.css">
+  <link rel="stylesheet" href="../css/fruits.css">
+  <title>Fruits</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="main-title">     
+        <h4>~ Word ~</h4>
+        <h1>Fruits</h1>
+      </div>
+      <nav>
+        <div class="pdf">
+          <a href="./pdf/fruits.pdf" target=”_blank”>
+            <img src="../img/pdf1.png" height="40" alt="PDF">
+            <p>Download</p>
+          </a>
+        </div>
+        <div class="return">
+          <a href="../contents.html">
+            <img src="../img/return.png" height="30" alt="Return">
+            <P>To Contents</P>
+          </a>
+        </div>
+      </nav>
+    </header>
+  
+    <hr>
+
+    <!-- reading -->
+    <div class="reading">
+      <audio id="audio" controls></audio>
+      <div class="btn-container">
+        <button class="btn" id="btn01">Word On</button>
+        <button class="btn light" id="btn02">Word Off</button>
+      </div>
+    </div>
+  
+    <!-- main -->
+    <main>
+      <div class="main-wrapper">
+        <img class="fruits-image" src="./img/fruit.png" width="1200" alt="Fruits">
+      </div>
+      <div class="detail">
+        <div class="dummy apple" onclick="playAudio('./audio/fruit/apple.mp3')">      <p>Apple</p></div>
+        <div class="dummy g-apl" onclick="playAudio('./audio/fruit/green-apple.mp3')"><p>Green Apple</p></div>
+        <div class="dummy stbry" onclick="playAudio('./audio/fruit/strawberry.mp3')"> <p>Strawberry</p></div>
+        <div class="dummy lemon" onclick="playAudio('./audio/fruit/lemon.mp3')">      <p>Lemon</p></div>
+        <div class="dummy peach" onclick="playAudio('./audio/fruit/peach.mp3')">      <p>Peach</p></div>
+        <div class="dummy orang" onclick="playAudio('./audio/fruit/orange.mp3')">     <p>Orange</p></div>
+        <div class="dummy w-mln" onclick="playAudio('./audio/fruit/watermelon.mp3')"> <p>Watermelon</p></div>
+        <div class="dummy mscat" onclick="playAudio('./audio/fruit/muscat.mp3')">     <p>Muscat</p></div>
+        <div class="dummy grape" onclick="playAudio('./audio/fruit/grape.mp3')">      <p>Grape</p></div>
+        <div class="dummy chery" onclick="playAudio('./audio/fruit/cherry.mp3')">     <p>Cherry</p></div>
+        <div class="dummy pear"  onclick="playAudio('./audio/fruit/pear.mp3')">       <p>Pear</p></div>
+        <div class="dummy jpear" onclick="playAudio('./audio/fruit/j-pear.mp3')">     <p>Japanese Pear</p></div>
+        <div class="dummy bnana" onclick="playAudio('./audio/fruit/banana.mp3')">     <p>Banana</p></div>
+        <div class="dummy melon" onclick="playAudio('./audio/fruit/melon.mp3')">      <p>Melon</p></div>
+        <div class="dummy pine"  onclick="playAudio('./audio/fruit/pineapple.mp3')">  <p>Pineapple</p></div>
+        <div class="dummy persi" onclick="playAudio('./audio/fruit/persimmon.mp3')">  <p>Persimmon</p></div>
+        <div class="dummy dragn" onclick="playAudio('./audio/fruit/dragon-f.mp3')">   <p>Dragon Fruit</p></div>
+        <div class="dummy kiwi"  onclick="playAudio('./audio/fruit/kiwi.mp3')">       <p>Kiwi</p></div>
+        <div class="dummy mango" onclick="playAudio('./audio/fruit/mango.mp3')">      <p>Mango</p></div>
+        <div class="dummy papay" onclick="playAudio('./audio/fruit/papaya.mp3')">     <p>Papaya</p></div>
+      </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; AIREI Project</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+      'use strict';
+
+      const btn01 = document.getElementById('btn01');
+      const btn02 = document.getElementById('btn02');
+      const dummys = document.getElementsByClassName('dummy');
+
+      // word on/off 切替
+      btn01.addEventListener('click', function() {
+        this.classList.add('light');
+        btn02.classList.remove('light');
+        for (let i = 0; i < dummys.length; i++) {
+          dummys[i].classList.add('appear');
+        }
+      });
+      btn02.addEventListener('click', function() {
+        this.classList.add('light');
+        btn01.classList.remove('light');
+        for (let i = 0; i < dummys.length; i++) {
+          dummys[i].classList.remove('appear');
+        }
+      });
+
+      // word出現
+      for (let i = 0; i < dummys.length; i++) {
+        dummys[i].addEventListener('click', function() {
+          this.classList.add('appear');
+        });
+      };
+
+      // word音声
+      function playAudio(audioFile) {
+        const audio = document.getElementById("audio");
+        audio.src = audioFile;
+        audio.play();
+      }
+
+
+
+    </script>
+    
+</body>
+</html>
