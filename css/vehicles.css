@@ -1,0 +1,96 @@
+
+main {
+  margin-top: 20px;
+  width: 1194px;    /* iPad pro 11 */
+  margin: 30px auto 0;
+
+}
+.content {
+  background-color: #cbfda2;
+  box-shadow: 5px 5px 10px #aaa;
+  border-radius: 20px;
+  position: relative;
+  margin: 30px auto;
+  width: 1080px;
+  height: 200px;
+}
+
+.start {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+.vehicle {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+/* スタート地点 */
+.car     {bottom: 10px; left:   9px; width: 220px;}     /* left  9 830px */
+.bicycle {bottom:  7px; left:  42px; width: 150px;}     /* left 42 865px */
+.bike    {bottom:  7px; left:  50px; width: 165px;}     /* left 50 855px */
+.truck   {bottom:  7px; left:   0px; width: 250px;}     /* left  0 817px */
+.bus     {bottom: 10px; left:  17px; width: 250px;}     /* left 17 817px */
+.police  {bottom: 10px; left:   9px; width: 230px;}     /* left  9 823px */
+.fire    {bottom: 10px; left:   9px; width: 252px;}     /* left  9 820px */
+.amblnce {bottom: 10px; left:   9px; width: 235px;}     /* left  9 823px */
+.train   {bottom: 16px; left:   2px; width: 253px;}     /* left  2 820px */
+.ship    {bottom: 26px; left:   2px; width: 253px;}     /* left  2 820px */
+.boat    {bottom:  0px; left:  38px; width: 180px;}     /* left 38 848px */
+.yacht   {bottom: 31px; left:  69px; width: 168px;}     /* left 69 869px */
+.plane   {bottom: 30px; left:  32px; width: 245px;}     /* left 32 819px */
+.heli    {bottom: 17px; left:  26px; width: 245px;}     /* left 26 819px */
+.crane   {bottom: 10px; left:  25px; width: 240px;}     /* left 25 826px */
+.excav   {bottom: 10px; left:  25px; width: 235px;}     /* left 25 833px */
+.dozer   {bottom: 10px; left:  35px; width: 240px;}     /* left 35 830px */
+
+.move {
+  transition: 1s;
+}
+/* ゴール地点 */
+.move.car     {left: 830px;}
+.move.bicycle {left: 865px;}
+.move.bike    {left: 855px;}
+.move.truck   {left: 817px;}
+.move.bus     {left: 817px;}
+.move.police  {left: 823px;}
+.move.fire    {left: 820px;}
+.move.amblnce {left: 823px;}
+.move.train   {left: 820px;}
+.move.ship    {left: 820px;}
+.move.boat    {left: 848px;}
+.move.yacht   {left: 869px;}
+.move.plane   {left: 819px;}
+.move.heli    {left: 819px;}
+.move.crane   {left: 826px;}
+.move.excav   {left: 833px;}
+.move.dozer   {left: 830px;}
+
+
+/* 文字 */
+.dummy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+  background-color: rgba(255,0,0,0);
+  color: #000;
+  font-weight: bold;
+  font-size: 70px;
+  text-shadow:
+  -3px -3px 4px #fff,
+  -3px 3px 4px #fff,
+  3px -3px 4px #fff,
+  3px 3px 4px #fff;
+
+}
+.appear {
+  opacity: 1;
+  transition: opacity 0.5s 0.2s;
+}

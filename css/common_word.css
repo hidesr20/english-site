@@ -51,8 +51,14 @@ nav a:hover {
 
 /* reanding */
 .reading {
+  width: 100vw;
   text-align: center;
-  margin: 20px auto 0;
+  padding: 20px;
+  background-color: #D9F5FF;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+
 }
 .reading p {
   margin: 10px auto 20px;
