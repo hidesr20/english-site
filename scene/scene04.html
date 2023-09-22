@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+  <!-- style -->
+  <link rel="icon" href="../img/titile-character1.png">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common_scene.css">
+  <link rel="stylesheet" href="../css/scene02.css">
+  <title>04.How was your day?</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="main-title">     
+      <h4>~ Scene 04 ~</h4>
+      <h1>How was your day?</h1>
+    </div>
+    <nav>
+      <div class="pdf">
+        <a href="./pdf/scene04.pdf" target=”_blank”>
+          <img src="../img/pdf1.png" height="40" alt="PDF">
+          <p>Download</p>
+        </a>
+      </div>
+      <div class="return">
+        <a href="../index.html">
+          <img src="../img/return.png" height="30" alt="Return">
+          <P>To Contents</P>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- main -->
+  <main class="study">    
+    
+    <!-- role + audio -->
+    <div class="role-title">
+      <!-- role1 -->
+      <div class="role-name01">
+        <img class="" height="200" src="./img/Mama_03.png" alt="character">
+        <h3 class="">Mother</h3>
+      </div>
+      <!-- reading -->
+      <div class="reading">
+        <audio id="audio" controls></audio>
+        <p><img src="./img/audio02.png" onclick="playAudio('./audio/scene04/scene04_all.mp3')" alt="Speaker"> All Reading</p>
+        <div class="btn-container">
+          <button class="btn" id="btn01">読</button>
+          <button class="btn" id="btn02">英</button>
+          <button class="btn" id="btn03">日</button>
+        </div>
+      </div>
+      <!-- role2 -->
+      <div class="role-name02">         
+        <img class="" height="150" src="./img/Girls_06.png" alt="character">
+        <h3 class="">Child</h3>
+      </div>
+    </div>
+
+    
+    <!-- conversation -->
+    <div class="conversation"> 
+
+      <!-- 01 -->
+      <div class="role-container role1">
+        <img class="icon" src="./img/Mama_03_face.png" alt="Icon">
+        <div class="talk-content talk-role1" onclick="playAudio('./audio/scene04/01_role1-01.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">ハウ ワズ ユア デイ？</p>
+            <p class="write">How was your day?</p>
+            <p class="mean">今日はどんな日だった？</p>
+          </div>
+        </div>
+      </div>
+      <!-- 02 -->
+      <div class="role-container role2">
+        <img class="icon" src="./img/Girls_06_face.png" alt="Icon">
+        <div class="talk-content talk-role2" onclick="playAudio('./audio/scene04/02_role2-01.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">イット ワズ ファン</p>
+            <p class="write">It was fun.</p>
+            <p class="mean">たのしかったよ。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 03 -->
+      <div class="role-container role2">
+        <img class="icon" src="./img/Girls_06_face.png" alt="Icon">
+        <div class="talk-content talk-role2" onclick="playAudio('./audio/scene04/03_role2-02.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">アイ ダンスドゥ ウィズ マイ フレンズ</p>
+            <p class="write">I danced with my friends.</p>
+            <p class="mean">友だちとダンスしたんだよ。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 04 -->
+      <div class="role-container role1">
+        <img class="icon" src="./img/Mama_03_face.png" alt="Icon">
+        <div class="talk-content talk-role1" onclick="playAudio('./audio/scene04/04_role1-02.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">ザット サウンズ ソー ファン</p>
+            <p class="write">That sounds so fun!</p>
+            <p class="mean">それは楽しそうね！</p>
+          </div>
+        </div>
+      </div>
+      <!-- 05 -->
+      <div class="role-container role2">
+        <img class="icon" src="./img/Girls_06_face.png" alt="Icon">
+        <div class="talk-content talk-role2" onclick="playAudio('./audio/scene04/05_role2-03.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">エンド アイ プレイドゥ バール ウィズ マイ ティーチャー</p>
+            <p class="write">And I played ball with my teacher!</p>
+            <p class="mean">あと先生とボールであそんだよ。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 06 -->
+      <div class="role-container role1">
+        <img class="icon" src="./img/Mama_03_face.png" alt="Icon">
+        <div class="talk-content talk-role1" onclick="playAudio('./audio/scene04/06_role1-03.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">ドゥー ユー ハブ ホームワーク トゥデイ？</p>
+            <p class="write">Do you have homework today?</p>
+            <p class="mean">しゅくだいはあるの？</p>
+          </div>
+        </div>
+      </div>
+      <!-- 07 -->
+      <div class="role-container role2">
+        <img class="icon" src="./img/Girls_06_face.png" alt="Icon">
+        <div class="talk-content talk-role2" onclick="playAudio('./audio/scene04/07_role2-04.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">イエス、ア リトル</p>
+            <p class="write">Yes, a little.</p>
+            <p class="mean">あるよ、すこしだけ。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 08 -->
+      <div class="role-container role2">
+        <img class="icon" src="./img/Girls_06_face.png" alt="Icon">
+        <div class="talk-content talk-role2" onclick="playAudio('./audio/scene04/08_role2-05.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">アイム ゴーイング トゥ ドゥ イット ナウ</p>
+            <p class="write">I'm going to do it now!</p>
+            <p class="mean">これからやるよ。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 09 -->
+      <div class="role-container role1">
+        <img class="icon" src="./img/Mama_03_face.png" alt="Icon">
+        <div class="talk-content talk-role1" onclick="playAudio('./audio/scene04/09_role1-04.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">グッド ラック ウィズ ユア ホームワーク</p>
+            <p class="write">Good luck with your homework!</p>
+            <p class="mean">しゅくだい がんばってね。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="role-container role2">
+        <img class="icon" src="./img/Girls_06_face.png" alt="Icon">
+        <div class="talk-content talk-role2" onclick="playAudio('./audio/scene04/10_role2-06.mp3')">        
+          <div class="speaker"><img src="./img/audio01.png" alt="Speaker"></div>
+          <div>
+            <p class="read">オッケー！</p>
+            <p class="write">Okay! </p>
+            <p class="mean">オッケー！</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+  <footer>
+    <p>&copy; AIREI Project</p>
+  </footer>
+
+
+  <script>
+    'use strict';
+
+    // 音声再生
+    function playAudio(audioFile) {
+      const audio = document.getElementById("audio");
+      audio.src = audioFile;
+      audio.play();
+    }
+
+    // 表示/非表示
+    const btn01 = document.getElementById('btn01');
+    const btn02 = document.getElementById('btn02');
+    const btn03 = document.getElementById('btn03');
+
+    const read = document.getElementsByClassName('read');
+    const write = document.getElementsByClassName('write');
+    const mean = document.getElementsByClassName('mean');
+
+    btn01.addEventListener('click', function() {
+      this.classList.toggle('btn-change');
+      for (let i = 0; i < read.length; i++) {
+        read[i].classList.toggle('appear');
+      }
+    });
+    btn03.addEventListener('click', function() {
+      this.classList.toggle('btn-change');
+      for (let i = 0; i < mean.length; i++) {
+        mean[i].classList.toggle('appear');
+      }
+    });
+
+
+
+  </script>
+
+</body>
+
+</html>
