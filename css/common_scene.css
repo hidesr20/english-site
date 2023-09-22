@@ -49,6 +49,7 @@ nav a:hover {
 }
 .pdf {
   color: blue;
+  display: none;
 }
 
 /* main */
@@ -73,6 +74,12 @@ main {
 .role-name01,
 .role-name02 {
   text-align: center;
+}
+.role-name01 img {
+  height: 200px;
+}
+.role-name02 img {
+  height: 150px;
 }
 
 /* reanding */
@@ -160,4 +167,97 @@ footer {
 }
 .appear {
   display: block;
+}
+
+
+
+/* tb */
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+  .study {
+    width: 95%;
+  }
+  .role-title h3 {
+    font-size: 1.1em;
+  }
+  .role-name01 img {
+    height: 180px;
+  }
+  .role-name02 img {
+    height: 130px;
+  }
+  .reading {
+    margin: 50px auto 0;
+  }
+
+  .role-container {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/* sp */
+@media (max-width: 599px) {
+  body {
+    font-size: 18px;
+  }
+  header h1 {
+    font-weight: 900;
+    font-size: 2.0em;
+  }
+  .role-name01 img {
+    height: 100px;
+  }
+  .role-name02 img {
+    height: 75px;
+  }
+  .role-title h3 {
+    width: 100px;
+  }
+  audio {
+    width: 130px;
+  }
+  .reading img {
+    width: 20px;
+  }
+  .reading .btn {
+    padding: 2px 8px;
+    margin: 0 2px;
+    border-radius: 5px;
+    color: #999;
+    background-color: #E9E9ED;  
+  }
+  
+  .conversation {
+    margin-top: 50px;
+  }
+  .icon {
+    height: 35px;  
+  }
+
+  .role-container {
+    line-height: 22px;
+  }  
+  .talk-content {
+    gap: 5px;
+    padding: 5px 10px;
+  }
+  .speaker img {
+    width: 18px;
+  }
+  .read {
+    font-size: 0.6em;
+  }
+  .write {
+    font-size: 0.8em;
+  }
+  .mean {
+    font-size: 0.6em;
+  }
+  
+
+
 }
