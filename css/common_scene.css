@@ -174,7 +174,19 @@ footer {
 /* tb */
 @media (max-width: 1024px) {
   nav {
-    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .return a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .return a img {
+    height: 18px;
   }
   .study {
     width: 95%;
@@ -208,6 +220,12 @@ footer {
     font-weight: 900;
     font-size: 2.0em;
   }
+  nav {
+    top: 30px;
+  }
+  .return a p {
+    display: none;
+  }
   .role-name01 img {
     height: 100px;
   }
@@ -226,9 +244,6 @@ footer {
   .reading .btn {
     padding: 2px 8px;
     margin: 0 2px;
-    border-radius: 5px;
-    color: #999;
-    background-color: #E9E9ED;  
   }
   
   .conversation {

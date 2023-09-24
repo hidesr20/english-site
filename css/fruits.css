@@ -8,7 +8,7 @@ main {
   position: relative;
   user-select: none; 
 }
-.fruits-image {
+.fruits-image { 
   width: 100%;
 }
 .dummy {
