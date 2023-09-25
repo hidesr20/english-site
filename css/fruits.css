@@ -3,12 +3,16 @@
 main {
   margin-top: 20px;
   text-align: center;
-  width: 1200px;
+  width: 1194px;
   margin: 0 auto;
   position: relative;
   user-select: none; 
 }
-.fruits-image { 
+.tb,
+.sp {
+  display: none;
+}
+.fruits-image1 { 
   width: 100%;
 }
 .dummy {
@@ -41,8 +45,7 @@ main {
   transform: translateY(0);
 }
 
-
-.apple {top:  39px; left:  30px; width: 134px; height: 140px;}
+.apple {top:  0px; left:  30px; width: 134px; height: 140px;}
 .g-apl {top:  38px; left: 207px; width: 131px; height: 144px;}
 .stbry {top:  28px; left: 383px; width: 230px; height: 144px;}
 .lemon {top:  31px; left: 671px; width: 267px; height: 107px;}
@@ -53,7 +56,7 @@ main {
 .grape {top: 215px; left: 843px; width: 114px; height: 176px;}
 .chery {top: 224px; left:1025px; width: 122px; height: 147px;}
 .pear  {top: 446px; left:  56px; width: 126px; height: 158px;}
-.jpear {top: 476px; left: 241px; width: 138px; height: 131px;}
+.jpear {top: 466px; left: 241px; width: 138px; height: 131px;}
 .bnana {top: 452px; left: 455px; width: 205px; height: 163px;}
 .melon {top: 435px; left: 709px; width: 258px; height: 177px;}
 .pine  {top: 406px; left:1032px; width: 121px; height: 240px;}
@@ -73,3 +76,93 @@ main {
 .w-mln p {top: 65px; left: 40px;} */
 
 
+/* tb */
+@media (max-width: 1024px) {
+  .tb {
+    display: block;
+  }
+  .pc,.sp {
+    display: none;
+  }
+  .pdf {
+    display: none;
+  }
+  main {
+    width: 744px;
+  }
+  .fruits-image2 { 
+    width: 100%;
+  }  
+  .dummy p {
+    font-size: 26px;
+    transform: translateY(85%);
+  }
+
+  .apple {top:  33px; left:  40px; width: 101px; height: 103px;}
+  .g-apl {top:  33px; left: 175px; width: 101px; height: 103px;}
+  .stbry {top:  28px; left: 316px; width: 173px; height: 105px;}
+  .lemon {top:  46px; left: 524px; width: 206px; height:  78px;}
+  .peach {top: 194px; left: 40px; width: 105px; height:  98px;}
+  .orang {top: 193px; left: 173px; width: 197px; height: 101px;}
+  .w-mln {top: 186px; left: 397px; width: 194px; height: 122px;}
+  .chery {top: 186px; left: 624px; width:  95px; height: 111px;}
+  .mscat {top: 350px; left:  52px; width:  87px; height: 135px;}
+  .grape {top: 350px; left: 184px; width:  87px; height: 135px;}
+  .pine  {top: 319px; left: 335px; width:  86px; height: 186px;}
+  .pear  {top: 372px; left: 470px; width:  95px; height: 116px;}
+  .jpear {top: 383px; left: 608px; width: 110px; height: 103px;}
+  .bnana {top: 541px; left:  91px; width: 157px; height: 121px;}
+  .melon {top: 535px; left: 306px; width: 194px; height: 134px;}
+  .persi {top: 560px; left: 546px; width: 105px; height:  83px;}
+  .dragn {top: 710px; left:  38px; width: 138px; height: 137px;}
+  .kiwi  {top: 737px; left: 192px; width: 146px; height: 106px;}
+  .mango {top: 731px; left: 385px; width: 145px; height: 110px;}
+  .papay {top: 728px; left: 566px; width: 173px; height: 112px;}
+  
+}
+
+
+/* sp */
+@media (max-width: 599px) {
+  .sp {
+    display: block;
+  }
+  .pc,.tb {
+    display: none;
+  }  
+  main {
+    width: 375px;
+  }
+  .fruits-image3 { 
+    width: 100%;
+  }  
+  .dummy p {
+    font-size: 22px;
+    transform: translateY(70%);
+  }
+
+  .apple {top:  36px; left:  23px; width:  81px; height:  83px;}
+  .g-apl {top:  36px; left: 124px; width:  81px; height:  83px;}
+  .stbry {top:  28px; left: 232px; width: 139px; height:  87px;}
+  .lemon {top: 170px; left:  10px; width: 160px; height:  65px;}
+  .mscat {top: 145px; left: 196px; width:  71px; height: 107px;}
+  .grape {top: 145px; left: 293px; width:  71px; height: 107px;}
+  .peach {top: 281px; left:  11px; width:  87px; height:  78px;}
+  .orang {top: 281px; left: 120px; width: 156px; height:  82px;}
+  .chery {top: 278px; left: 300px; width:  74px; height:  83px;}
+  .w-mln {top: 400px; left:  39px; width: 149px; height:  94px;}
+  .melon {top: 391px; left: 214px; width: 138px; height: 100px;}
+  .bnana {top: 526px; left:  14px; width: 109px; height:  88px;}
+  .persi {top: 548px; left: 148px; width:  82px; height:  67px;}
+  .pine  {top: 506px; left: 280px; width:  62px; height: 131px;}
+  .pear  {top: 667px; left:  26px; width:  75px; height:  91px;}
+  .jpear {top: 667px; left: 138px; width:  85px; height:  77px;}
+  .kiwi  {top: 667px; left: 249px; width: 117px; height:  94px;}
+  .dragn {top: 791px; left:  14px; width:  99px; height: 101px;}
+  .mango {top: 809px; left: 130px; width: 100px; height:  80px;}
+  .papay {top: 808px; left: 250px; width: 121px; height:  79px;}
+
+
+
+
+}
