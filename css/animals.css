@@ -13,6 +13,7 @@ main {
   gap: 30px;
 }
 .item {
+  width: 550px;
   position: relative;
 }
 .animal-image {
@@ -157,3 +158,146 @@ main {
 
 
 
+
+
+
+/* tb */
+@media (max-width: 1024px) {
+  main {
+    width: 744px;
+  }
+  .main-wrapper {
+    display: block;
+  }
+  .item {
+    margin: 20px auto 30px;
+  }
+  
+}
+
+
+
+/* sp */
+@media (max-width: 599px) {
+  main {
+    width: 375px;
+  }
+  .animal-image {
+    width: 370px;
+  }
+  .dummy p {
+    font-size: 22px;
+  }
+
+  /* クリック位置 */
+  /* 公園 */
+  .bird  {top:  22px; left: 180px; width:  78px; height:  33px;}
+  .btfly {top:  73px; left:  46px; width:  52px; height:  43px;}
+  .cat   {top: 188px; left: 189px; width:  61px; height:  28px;}
+  .dog   {top: 195px; left:  25px; width: 132px; height:  83px;}
+  .mouse {top: 178px; left: 315px; width:  35px; height:  31px;}
+  .snake {top: 286px; left:  94px; width:  66px; height:  51px;}
+  .frog  {top: 322px; left: 293px; width:  51px; height:  36px;}
+  /* 牧場 */
+  .sheep {top: 168px; left:  13px; width:  70px; height:  60px;}
+  .cow   {top: 176px; left: 125px; width:  93px; height:  61px;}
+  .goat  {top: 198px; left: 293px; width:  57px; height:  44px;}
+  .pig   {top: 246px; left:  18px; width:  84px; height:  57px;}
+  .horse {top: 243px; left: 219px; width: 149px; height: 124px;}
+  /* 森 */
+  .rbbit {top: 195px; left:  70px; width:  55px; height:  62px;}
+  .fox   {top: 169px; left: 302px; width:  49px; height:  71px;}
+  .sqrel {top: 211px; left: 200px; width:  41px; height:  44px;}
+  .deer  {top: 136px; left: 136px; width: 105px; height:  70px;}
+  .bear  {top: 267px; left: 247px; width: 120px; height: 100px;}
+  .monky {top:  74px; left: 117px; width:  65px; height:  61px;}
+  .duck  {top: 295px; left:  20px; width: 105px; height:  52px;}
+  .w-boa {top: 149px; left:  23px; width:  62px; height:  45px;}
+  .owl   {top:  15px; left: 226px; width:  43px; height:  51px;}
+  /* 海 */
+  .whale {top:   8px; left: 138px; width: 231px; height:  80px;}
+  .dolpn {top:  28px; left:   5px; width: 102px; height:  74px;}
+  .fish  {top: 166px; left: 109px; width: 150px; height:  73px;}
+  .turtl {top: 139px; left:   2px; width:  90px; height:  89px;}
+  .shrmp {top: 313px; left: 283px; width:  68px; height:  50px;}
+  .squid {top: 224px; left: 239px; width:  70px; height:  82px;}
+  .crab  {top: 308px; left: 112px; width:  88px; height:  56px;}
+  .shark {top: 107px; left: 264px; width:  99px; height:  91px;}
+  .octps {top: 265px; left:  22px; width:  72px; height:  71px;}
+  /* サバンナ */
+  .grafe {top: 100px; left:  79px; width:  56px; height:  77px;}
+  .tiger {top: 221px; left: 135px; width:  58px; height:  68px;}
+  .elpht {top: 125px; left: 144px; width:  94px; height:  83px;}
+  .crcdl {top: 279px; left:   4px; width: 134px; height:  82px;}
+  .lion  {top: 155px; left: 244px; width: 124px; height:  91px;}
+  .grill {top: 146px; left:   2px; width:  75px; height:  83px;}
+  .hippo {top: 251px; left: 217px; width: 147px; height: 108px;}
+  /* 原っぱ */
+  .drgfl {top:   7px; left: 118px; width: 112px; height:  81px;}
+  .ant   {top: 173px; left:  38px; width:  22px; height:  64px;}
+  .spidr {top: 160px; left: 259px; width:  37px; height:  38px;}
+  .snail {top: 136px; left:  91px; width:  42px; height:  37px;}
+  .grshp {top: 214px; left:  65px; width:  64px; height:  24px;}
+  .msqit {top: 108px; left: 253px; width:  32px; height:  34px;}
+  .bee   {top: 187px; left: 156px; width:  78px; height:  50px;}
+  .ldybg {top: 278px; left: 147px; width:  38px; height:  29px;}
+  .lizrd {top: 210px; left: 278px; width:  85px; height:  61px;}
+
+
+
+  /* 文字位置 */
+  /* 公園 */
+  .bird  p {transform: translate(66px, -21px);}
+  .btfly p {transform: translate(-13px, -38px);}
+  .cat   p {transform: translate(-8px, -33px);}
+  .dog   p {transform: translate(0px, -60px);}
+  .mouse p {transform: translate(-4px, -30px);}
+  .snake p {transform: translate(66px, -19px);}
+  .frog  p {transform: translate(-41px, -22px);}
+  /* 牧場 */
+  .sheep p {transform: translate(-2px, -48px);}
+  .cow   p {transform: translate(-2px, -47px);}
+  .goat  p {transform: translate(-2px, -40px);}
+  .pig   p {transform: translate(42px, 29px);}
+  .horse p {transform: translate(-91px, -26px);}
+  /* 森 */
+  .rbbit p {transform: translate(-47px, -10px);}
+  .fox   p {transform: translate(-11px, -53px);}
+  .sqrel p {transform: translate(-33px, 31px);}
+  .deer  p {transform: translate(67px, 4px);}
+  .bear  p {transform: translate(23px, -50px);}
+  .monky p {transform: translate(0px, -51px);}
+  .duck  p {transform: translate(-27px, -31px);}
+  .w-boa p {transform: translate(8px, -53px);}
+  .owl   p {transform: translate(44px, -11px);}
+  /* 海 */
+  .whale p {transform: translate(-47px, 45px);}
+  .dolpn p {transform: translate(35px, -32px);}
+  .fish  p {transform: translate(5px, -53px);}
+  .turtl p {transform: translate(11px, -55px);}
+  .shrmp p {transform: translate(-33px, 18px);}
+  .squid p {transform: translate(53px, 5px);}
+  .crab  p {transform: translate(-2px, -45px);}
+  .shark p {transform: translate(-7px, 20px);}
+  .octps p {transform: translate(-4px, 41px);}
+  /* サバンナ */
+  .grafe p {transform: translate(-8px, -56px);}
+  .tiger p {transform: translate(-45px, -2px);}
+  .elpht p {transform: translate(6px, -56px);}
+  .crcdl p {transform: translate(52px, -20px);}
+  .lion  p {transform: translate(23px, 35px);}
+  .grill p {transform: translate(3px, 33px);}
+  .hippo p {transform: translate(-43px, 42px);}
+  /* 原っぱ */
+  .drgfl p {transform: translate(-93px, -26px);}
+  .ant   p {transform: translate(-22px, -47px);}
+  .spidr p {transform: translate(38px, -26px);}
+  .snail p {transform: translate(31px, -26px);}
+  .grshp p {transform: translate(8px, 24px);}
+  .msqit p {transform: translate(23px, -30px);}
+  .bee   p {transform: translate(-31px, -26px);}
+  .ldybg p {transform: translate(0px, 29px);}
+  .lizrd p {transform: translate(-40px, 25px);} 
+
+
+}

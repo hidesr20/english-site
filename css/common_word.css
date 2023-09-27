@@ -100,6 +100,9 @@ footer {
     top: 20px;
     right: 20px;
   }
+  .pdf {
+    display: none;
+  }
   .return a {
     display: flex;
     align-items: center;

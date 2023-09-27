@@ -84,9 +84,6 @@ main {
   .pc,.sp {
     display: none;
   }
-  .pdf {
-    display: none;
-  }
   main {
     width: 744px;
   }
