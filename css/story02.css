@@ -1,0 +1,19 @@
+
+.illust {
+  text-align: center;
+}
+.illust img {
+  width: 530px;
+}
+
+/* tb */
+@media (max-width: 1024px) {
+}
+
+
+/* sp */
+@media (max-width: 599px) {
+  .illust img {
+    width: 280px;
+  }
+}

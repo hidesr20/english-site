@@ -1,0 +1,44 @@
+
+.illust {
+  position: absolute;
+  top: 18%;
+  right: 2%;
+  text-align: center;
+}
+.illust img {
+  width: 280px;
+}
+.illust p {
+  transform: translateY(-30px);
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #bf11c9;
+}
+
+
+
+/* tb */
+@media (max-width: 1024px) {
+  .illust {
+    top: 15%;
+  }
+  .illust img {
+    width: 180px;
+  }
+  .illust p {
+    font-size: 22px;
+  }  
+}
+
+
+/* sp */
+@media (max-width: 599px) {
+  .illust {
+    position: inherit;
+  }
+  .illust p {
+    font-size: 20px;
+  } 
+}
