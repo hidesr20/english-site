@@ -60,6 +60,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-bottom: 10px;
 }
 .reading img {
   cursor: pointer;
@@ -113,6 +114,11 @@ main {
   display: none;
   font-size: 0.9em;
   color: #777;
+}
+.end {
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0;
 }
 
 
@@ -189,15 +195,8 @@ footer {
     padding: 5px 20px;
     border-radius: 5px;
   }
-
-  .main-wrapper {
-    width: 380px;
-  }
-
   .audio {
     gap: 10px;
-    margin-bottom: 10px;
-
   }
   .reading img {
     width: 20px;
@@ -206,8 +205,11 @@ footer {
     font-size: 17px;
     padding: 4px 15px;
   }
-  
-  
+
+  .main-wrapper {
+    width: 380px;
+  }
+
   footer {
     font-size: 14px;
   }

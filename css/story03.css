@@ -1,0 +1,27 @@
+
+header h1 {
+  color: #abff10;
+  text-shadow: -6px -2px 4px #008510, 6px 2px 4px #008510;
+}
+header h2 {
+  color: #008510;
+}
+
+.illust {
+  text-align: center;
+}
+.illust img {
+  width: 530px;
+}
+
+/* tb */
+@media (max-width: 1024px) {
+}
+
+
+/* sp */
+@media (max-width: 599px) {
+  .illust img {
+    width: 280px;
+  }
+}
