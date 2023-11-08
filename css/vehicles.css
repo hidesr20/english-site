@@ -1,9 +1,15 @@
 
 main {
-  margin-top: 20px;
   width: 1194px;    /* iPad pro 11 */
-  margin: 30px auto 0;
-
+  margin: 10px auto 0;
+}
+#btn01 {
+  border: 1px solid #aaa;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #333;
+  background-color: rgb(255 254 233);  
 }
 .content {
   background-color: #cbfda2;
@@ -12,64 +18,22 @@ main {
   position: relative;
   margin: 30px auto;
   width: 1080px;
-  height: 200px;
+  height: 160px;
 }
-
-.start {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  pointer-events: none;
+.content:nth-child(even) {
+  background-color: #fff5c6;
 }
 .vehicle {
   position: absolute;
   z-index: 1;
   cursor: pointer;
+  transition: 0.8s;
+  left: 1%;
+  height: 100%;
 }
-
-
-/* スタート地点 */
-.car     {bottom: 10px; left:   9px; width: 220px;}     /* left  9 830px */
-.bicycle {bottom:  7px; left:  42px; width: 150px;}     /* left 42 865px */
-.bike    {bottom:  7px; left:  50px; width: 165px;}     /* left 50 855px */
-.truck   {bottom:  7px; left:   0px; width: 250px;}     /* left  0 817px */
-.bus     {bottom: 10px; left:  17px; width: 250px;}     /* left 17 817px */
-.police  {bottom: 10px; left:   9px; width: 230px;}     /* left  9 823px */
-.fire    {bottom: 10px; left:   9px; width: 252px;}     /* left  9 820px */
-.amblnce {bottom: 10px; left:   9px; width: 235px;}     /* left  9 823px */
-.train   {bottom: 16px; left:   2px; width: 253px;}     /* left  2 820px */
-.ship    {bottom: 26px; left:   2px; width: 253px;}     /* left  2 820px */
-.boat    {bottom:  0px; left:  38px; width: 180px;}     /* left 38 848px */
-.yacht   {bottom: 31px; left:  69px; width: 168px;}     /* left 69 869px */
-.plane   {bottom: 30px; left:  32px; width: 245px;}     /* left 32 819px */
-.heli    {bottom: 17px; left:  26px; width: 245px;}     /* left 26 819px */
-.crane   {bottom: 10px; left:  25px; width: 240px;}     /* left 25 826px */
-.excav   {bottom: 10px; left:  25px; width: 235px;}     /* left 25 833px */
-.dozer   {bottom: 10px; left:  35px; width: 240px;}     /* left 35 830px */
-
 .move {
-  transition: 1s;
+  left: 75%;
 }
-/* ゴール地点 */
-.move.car     {left: 830px;}
-.move.bicycle {left: 865px;}
-.move.bike    {left: 855px;}
-.move.truck   {left: 817px;}
-.move.bus     {left: 817px;}
-.move.police  {left: 823px;}
-.move.fire    {left: 820px;}
-.move.amblnce {left: 823px;}
-.move.train   {left: 820px;}
-.move.ship    {left: 820px;}
-.move.boat    {left: 848px;}
-.move.yacht   {left: 869px;}
-.move.plane   {left: 819px;}
-.move.heli    {left: 819px;}
-.move.crane   {left: 826px;}
-.move.excav   {left: 833px;}
-.move.dozer   {left: 830px;}
-
 
 /* 文字 */
 .dummy {
@@ -83,14 +47,59 @@ main {
   color: #000;
   font-weight: bold;
   font-size: 70px;
+  pointer-events: none;
   text-shadow:
   -3px -3px 4px #fff,
   -3px 3px 4px #fff,
   3px -3px 4px #fff,
   3px 3px 4px #fff;
-
+  transition: opacity 0.3s;
 }
 .appear {
   opacity: 1;
-  transition: opacity 0.5s 0.2s;
+  transition: opacity 1.5s 0.1s;
+  pointer-events: auto;
+}
+
+/* tb */
+@media (max-width: 1024px) {
+  main {
+    width: 800px;
+  }  
+  .content {
+    border-radius: 15px;
+    width: 100%;
+    height: 140px;
+  }
+  .move {
+    left: 70%;
+  }
+  .dummy {
+    font-size: 50px;
+  }
+}
+@media (max-width: 599px) {
+  #btn01 {
+    font-size: 14px;
+    padding: 5px 10px;
+  }  
+  main {
+    width: 90vw;
+  }  
+  .content {
+    border-radius: 5px;
+    height: 70px;
+    box-shadow: 3px 3px 5px #aaa;
+    margin: 20px auto;
+  }
+  .vehicle {
+    transition: 0.3s; /* Reset時 */
+  }
+  .move {
+    left: 69%;
+    transition: 0.8s; /* 動作時 */
+  }
+  .dummy {
+    font-size: 25px;
+  }
 }
