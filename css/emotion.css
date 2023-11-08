@@ -44,6 +44,19 @@ main {
   display: block;
 }
 
+#btn04 {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: #333;
+  background-color: rgb(255 254 233);
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
+}
+
+
 
 /* tb */
 @media (max-width: 1024px) {
@@ -69,5 +82,15 @@ main {
   .write {
     font-size: 24px;
   }
+
+  #btn04 {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: rgb(255 254 233);
+    position: absolute;
+    bottom: 42px;
+    right: 20px;
+  }
+
   
 }
