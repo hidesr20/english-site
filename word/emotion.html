@@ -45,6 +45,7 @@
       <div class="btn-container">
         <button class="btn" id="btn01">日本語表示</button>
       </div>
+      <button id="btn04">Word Off</button>
     </div>
   
     <!-- main -->
@@ -158,6 +159,7 @@
       const emoji = document.getElementsByClassName('emoji');
       const mean = document.getElementsByClassName('mean');
       const write = document.getElementsByClassName('write');
+      const btn04 = document.getElementById('btn04');
 
 
       // 日本語表示/非表示
@@ -181,6 +183,13 @@
         audio.src = audioFile;
         audio.play();
       }
+
+      // 英単語Word Off
+      btn04.addEventListener('click', function() {
+        for (let i = 0; i < write.length; i++) {
+          write[i].classList.remove('appear');
+        }
+      });
 
     </script>
     
