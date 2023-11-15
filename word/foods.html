@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,900;1,700&display=swap" rel="stylesheet">
+  <!-- stayle -->
+  <link rel="icon" href="../img/titile-character1.png">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common_word.css">
+  <link rel="stylesheet" href="../css/foods.css">
+  <title>Foods</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="main-title">     
+      <h4>~ Word ~</h4>
+      <h1>Foods</h1>
+    </div>
+    <nav>
+      <div class="pdf">
+        <a href="./pdf/foods.pdf" target=”_blank”>
+          <img src="../img/pdf1.png" height="40" alt="PDF">
+          <p>Download</p>
+        </a>
+      </div>
+      <div class="return">
+        <a href="../index.html">
+          <img src="../img/return.png" height="30" alt="Return">
+          <P>To Contents</P>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- reading -->
+  <div class="reading">
+    <audio id="audio" controls></audio>
+    <div class="btn-container">
+      <button class="btn" id="btn01">Word On</button>
+      <button class="btn light" id="btn02">Word Off</button>
+    </div>
+  </div>
+
+  <!-- main -->
+  <main>
+    <div class="main-wrapper">
+      <!-- 主要食 -->
+      <div class="category">
+        <h2 class="item-title" onclick="playAudio('./audio/food/main-food.mp3')">Main-Food</h2>
+        <div class="item"><img class="food-image" src="./img/food_main.png" alt="Main">
+          <div class="dummy rice   " onclick="playAudio('./audio/food/rice.mp3')">      <p>Rice</p></div>
+          <div class="dummy bread  " onclick="playAudio('./audio/food/bread.mp3')">     <p>Bread</p></div>
+          <div class="dummy noodle " onclick="playAudio('./audio/food/noodle.mp3')">    <p>Noodle</p></div>
+          <div class="dummy soup   " onclick="playAudio('./audio/food/soup.mp3')">      <p>Soup</p></div>
+          <div class="dummy spaghti" onclick="playAudio('./audio/food/spaghetti.mp3')"> <p>Spaghetti</p></div>
+          <div class="dummy hambrgr" onclick="playAudio('./audio/food/hamburger.mp3')"> <p>Hamburger</p></div>
+          <div class="dummy salad  " onclick="playAudio('./audio/food/salad.mp3')">     <p>Salad</p></div>
+          <div class="dummy pizza  " onclick="playAudio('./audio/food/pizza.mp3')">     <p>Pizza</p></div>
+          <div class="dummy beef   " onclick="playAudio('./audio/food/beef.mp3')">      <p>Beef</p></div>
+          <div class="dummy pork   " onclick="playAudio('./audio/food/pork.mp3')">      <p>Pork</p></div>
+          <div class="dummy chicken" onclick="playAudio('./audio/food/chicken.mp3')">   <p>Chicken</p></div>
+          <div class="dummy lamb   " onclick="playAudio('./audio/food/lamb.mp3')">      <p>Lamb</p></div>
+          <div class="dummy bacon  " onclick="playAudio('./audio/food/bacon.mp3')">     <p>Bacon</p></div>
+          <div class="dummy ham    " onclick="playAudio('./audio/food/ham.mp3')">       <p>Ham</p></div>
+          <div class="dummy sausage" onclick="playAudio('./audio/food/sausage.mp3')">   <p>Sausage</p></div>
+          <div class="dummy egg    " onclick="playAudio('./audio/food/egg.mp3')">       <p>Egg</p></div>
+        </div>
+      </div>
+      <!-- 野菜 -->
+      <div class="category">
+        <h2 class="item-title" onclick="playAudio('./audio/food/vegetable.mp3')">Vegetable</h2>
+        <div class="item"><img class="food-image" src="./img/food_vegetable.png" alt="Vegetable">
+          <div class="dummy cucumber" onclick="playAudio('./audio/food/cucumber.mp3')">  <p>Cucumber</p></div>
+          <div class="dummy eggplant" onclick="playAudio('./audio/food/eggplant.mp3')">  <p>Eggplant</p></div>
+          <div class="dummy carrot  " onclick="playAudio('./audio/food/carrot.mp3')">    <p>Carrot</p></div>
+          <div class="dummy tomato  " onclick="playAudio('./audio/food/tomato.mp3')">    <p>Tomato</p></div>
+          <div class="dummy corn    " onclick="playAudio('./audio/food/corn.mp3')">      <p>Corn</p></div>
+          <div class="dummy cabbage " onclick="playAudio('./audio/food/cabbage.mp3')">   <p>Cabbage</p></div>
+          <div class="dummy potato  " onclick="playAudio('./audio/food/potato.mp3')">    <p>Potato</p></div>
+          <div class="dummy onion   " onclick="playAudio('./audio/food/onion.mp3')">     <p>Onion</p></div>
+          <div class="dummy paprika " onclick="playAudio('./audio/food/paprika.mp3')">   <p>Paprika</p></div>
+          <div class="dummy g-pepper" onclick="playAudio('./audio/food/g-pepper.mp3')">  <p>Green Pepper</p></div>
+          <div class="dummy squash  " onclick="playAudio('./audio/food/squash.mp3')">    <p>Squash</p></div>
+          <div class="dummy lettuce " onclick="playAudio('./audio/food/lettuce.mp3')">   <p>Lettuce</p></div>
+          <div class="dummy garlic  " onclick="playAudio('./audio/food/garlic.mp3')">    <p>Garlic</p></div>
+          <div class="dummy s-potato" onclick="playAudio('./audio/food/s-potato.mp3')">  <p>Sweet Potato</p></div>
+          <div class="dummy asparags" onclick="playAudio('./audio/food/asparagus.mp3')"> <p>Asparagus</p></div>
+          <div class="dummy broccoli" onclick="playAudio('./audio/food/broccoli.mp3')">  <p>Broccoli</p></div>
+          <div class="dummy spinach " onclick="playAudio('./audio/food/spinach.mp3')">   <p>Spinach</p></div>
+          <div class="dummy g-onion " onclick="playAudio('./audio/food/g-onion.mp3')">   <p>Green Onion</p></div>
+          <div class="dummy radish  " onclick="playAudio('./audio/food/radish.mp3')">    <p>Radish</p></div>
+        </div>
+      </div>
+      <!-- 乳製品 -->
+      <div class="category">
+        <h2 class="item-title" onclick="playAudio('./audio/food/dairy.mp3')">Dairy</h2>
+        <div class="item"><img class="food-image" src="./img/food_dairy.png" alt="Dairy">
+          <div class="dummy dairy-p" onclick="playAudio('./audio/food/dairy-p.mp3')"> <p>Dairy Products</p></div>
+          <div class="dummy milk   " onclick="playAudio('./audio/food/milk.mp3')">    <p>Milk</p></div>
+          <div class="dummy cheese " onclick="playAudio('./audio/food/cheese.mp3')">  <p>Cheese</p></div>
+          <div class="dummy butter " onclick="playAudio('./audio/food/butter.mp3')">  <p>Butter</p></div>
+          <div class="dummy yogurt " onclick="playAudio('./audio/food/yogurt.mp3')">  <p>Yogurt</p></div>
+          <div class="dummy ice-c  " onclick="playAudio('./audio/food/ice-c.mp3')">   <p>Ice cream</p></div>
+        </div>
+      </div>
+      <!-- キッチン -->
+      <div class="category">
+        <h2 class="item-title" onclick="playAudio('./audio/food/kitchen.mp3')">Kitchen</h2>
+        <div class="item"><img class="food-image" src="./img/food_kitchen.png" alt="Kichien">
+          <div class="dummy sugar    " onclick="playAudio('./audio/food/sugar.mp3')">    <p>Sugar</p></div>
+          <div class="dummy salt     " onclick="playAudio('./audio/food/salt.mp3')">     <p>Salt</p></div>
+          <div class="dummy pepper   " onclick="playAudio('./audio/food/pepper.mp3')">   <p>Pepper</p></div>
+          <div class="dummy vinegar  " onclick="playAudio('./audio/food/vinegar.mp3')">  <p>Vinegar</p></div>
+          <div class="dummy oil      " onclick="playAudio('./audio/food/oil.mp3')">      <p>Oil</p></div>
+          <div class="dummy honey    " onclick="playAudio('./audio/food/honey.mp3')">    <p>Honey</p></div>
+          <div class="dummy frying-p " onclick="playAudio('./audio/food/frying-p.mp3')"> <p>Frying pan</p></div>
+          <div class="dummy candy    " onclick="playAudio('./audio/food/candy.mp3')">    <p>Candy</p></div>
+          <div class="dummy coffee   " onclick="playAudio('./audio/food/coffee.mp3')">   <p>Coffee</p></div>
+          <div class="dummy chocolate" onclick="playAudio('./audio/food/chocolate.mp3')"><p>Chocolate</p></div>
+          <div class="dummy towel    " onclick="playAudio('./audio/food/towel.mp3')"><p>Towel</p></div>
+        </div>
+      </div>
+
+    </div>    
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; AIREI Project</p>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script>
+    'use strict';
+
+    const btn01 = document.getElementById('btn01');
+    const btn02 = document.getElementById('btn02');
+    const dummys = document.getElementsByClassName('dummy');
+    const appear = document.getElementsByClassName('appear');
+
+    // word on/off 切替
+    btn01.addEventListener('click', function() {
+      this.classList.add('light');
+      btn02.classList.remove('light');
+      for (let i = 0; i < dummys.length; i++) {
+        dummys[i].classList.add('appear');
+      }
+    });
+    btn02.addEventListener('click', function() {
+      this.classList.add('light');
+      btn01.classList.remove('light');
+      for (let i = 0; i < dummys.length; i++) {
+        dummys[i].classList.remove('appear');
+      }
+    });
+
+    // word出現
+    for (let i = 0; i < dummys.length; i++) {
+      dummys[i].addEventListener('click', function() {
+        this.classList.add('appear');
+      });
+    };
+
+    // word音声
+    function playAudio(audioFile) {
+      const audio = document.getElementById("audio");
+      audio.src = audioFile;
+      audio.play();
+    }
+
+
+
+  </script>
+    
+</body>
+</html>
