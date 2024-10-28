@@ -40,6 +40,9 @@ header {
 .title-chara {
   width: 150px;
 }
+.resize {
+  font-size: 17px;
+}
 
 
 /* main */
@@ -314,6 +317,9 @@ footer p {
   .item-word li {
     width: 110px;;
   }
+  .resize {
+    font-size: 15px;
+  }
 }
 
 
@@ -371,6 +377,10 @@ footer p {
   .item-word li {
     width: 120px;;
   }
+  .resize {
+    font-size: 16px;
+  }
+
 
   footer {
     position: relative;
