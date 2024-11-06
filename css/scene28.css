@@ -4,7 +4,30 @@
 .talk-role2 {
   background-color: rgb(200 255 186 / 70%);
 }
+
+.role-name01 img {
+  height: 200px;
+}
 .role-name02 img {
   height: 190px;
 }
 
+/* tb */
+@media (max-width: 1024px) {
+  .role-name01 img {
+    height: 180px;
+  }
+  .role-name02 img {
+    height: 170px;
+  }
+}
+
+/* sp */
+@media (max-width: 599px) {
+  .role-name01 img {
+    height: 100px;
+  }
+  .role-name02 img {
+    height: 100px;
+  }
+}
